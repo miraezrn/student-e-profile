@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - UiTM E-Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #f7c9fc, #d3e7ff); /* Soft pastel gradient */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            margin-top: auto;
+            background: #212529;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        /* Social Media Icons with Background */
+        .social-icon {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icon.whatsapp {
+            background-color: #25D366;
+        }
+
+        .social-icon.instagram {
+            background: linear-gradient(45deg, #fd5949, #d6249f, #285aeb);
+        }
+
+        .social-icon.snapchat {
+            background-color: #FFFC00;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">UiTM E-PROFILE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section container my-5">
+        <div class="card shadow-lg border-0">
+            <div class="row g-0">
+                <!-- Profile Picture -->
+                <div class="col-md-4 text-center bg-light">
+                    <img src="qas.png" class="img-fluid rounded-circle mt-4 mb-4" alt="Profile Picture" style="width: 200px; height: 200px;">
+                    <h5 class="card-title">Putri Batrisyia Qasdina</h5>
+                    <p class="text-muted">Bachelor of Arts</p>
+
+                    <!-- Social Media Icons -->
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <a href="https://wa.me/60102690504" target="_blank" class="social-icon whatsapp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/btrsyqssdn" target="_blank" class="social-icon instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.snapchat.com/add/qassdyyy" target="_blank" class="social-icon snapchat">
+                            <i class="bi bi-snapchat"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile Details -->
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Personal Information</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Full Name:</strong> Putri Batrisyia Qasdina Binti Mohammad Hamidi</li>
+                            <li class="list-group-item"><strong>Date of Birth:</strong> 18 April 2003</li>
+                            <li class="list-group-item"><strong>Program:</strong> Bachelor of Arts</li>
+                            <li class="list-group-item"><strong>Address:</strong> Wilayah Persekutuan Kuala Lumpur, Malaysia</li>
+                        </ul>
+                        <h3 class="card-title mt-4">CGPA</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Current CGPA:</strong> 3.78</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-2">&copy; 2025 UiTM E-Profile. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

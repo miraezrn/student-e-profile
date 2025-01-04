@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - UiTM E-Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+        background: linear-gradient(to right, #e6f7ff, #f2f2f2); /* Soft light gradient for a neutral professional look */
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header, .footer {
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+    .header a, .footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .header a:hover, .footer a:hover {
+        text-decoration: underline;
+    }
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .header .nav-link {
+        color: black; /* Change link color to black */
+        font-weight: bold;
+    }
+    .header .nav-link:hover {
+        color: #d3e7ff;
+    }
+    .login-container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .btn-custom {
+        background-color: #4e54c8;
+        color: white;
+    }
+    .btn-custom:hover {
+        background-color: #3b42a0;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Responsive design adjustments */
+    @media (max-width: 768px) {
+        .header-nav {
+            flex-direction: column;
+            gap: 15px;
+        }
+        .login-container {
+            max-width: 100%;
+            padding: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav class="header-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="list.html" class="nav-link">Students</a>
+            <a href="about.html" class="nav-link">About Us</a>
+        </nav>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <h3 class="text-center mb-4">UiTM E-PROFILE LOGIN</h3>
+        <form action="profiles.html" method="POST" id="loginForm">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Login</button>
+        </form>
+        <p class="text-center mt-3">
+            <small>Forgot your password? <a href="#">Click here</a></small>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 UiTM E-Profile. All Rights Reserved.</p>
+    </div>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

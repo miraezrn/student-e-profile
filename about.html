@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - UiTM E-Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #f7c9fc, #d3e7ff); /* Soft pastel gradient */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            margin-top: auto;
+            background: #212529;
+            color: white;
+            padding: 1rem 0;
+        }
+
+
+        .header {
+            background: linear-gradient(to right, #3b42a0, #4e54c8);
+            color: white;
+            padding: 20px 0;
+        }
+        .header h1 {
+            text-align: center;
+        }
+        .content-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+        }
+       
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">UiTM E-PROFILE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carousel Section -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="uitm logo bg remove.png" class="d-block w-100" alt="UiTM Campus">
+            </div>
+            <div class="carousel-item">
+                <img src="uitm-A.jpg" class="d-block w-100" alt="UiTM Library">
+            </div>
+            <div class="carousel-item">
+                <img src="uitm.jpg" class="d-block w-100" alt="UiTM Students">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container mt-5">
+        <div class="content-section">
+            <h2 class="text-center mb-4">Welcome to UiTM</h2>
+            <div class="row">
+                <!-- Vision -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Vision</h5>
+                            <p class="card-text">
+                                To establish UiTM as a globally renowned institution of higher learning, promoting academic excellence, sustainability, and inclusivity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mission -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Mission</h5>
+                            <p class="card-text">
+                                To nurture potential, inspire innovation, and empower communities through quality education and research.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="content-section mt-4">
+            <h2 class="text-center mb-4">Discover UiTM</h2>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://youtu.be/YLoXyfaXxKE?si=CsGlIJmSjQSATuMT" 
+                        title="UiTM Introduction Video" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-2">&copy; 2025 UiTM E-Profile. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - UiTM E-Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #f7c9fc, #d3e7ff); /* Soft pastel gradient */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            margin-top: auto;
+            background: #212529;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-body {
+            background-color: #fff;
+        }
+        .btn-primary {
+            background-color: #4e54c8;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #3b42a0;
+        }
+    </style>
+</head>
+<body>
+   <!-- Navbar -->
+   <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">UiTM E-PROFILE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="list.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="list.html">List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+    <!-- Profile List -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">List of Profiles</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Profile 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="mira.png" class="card-img-top" alt="mira">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nur Syamira</h5>
+                        <p class="card-text">Bachelor of Computer Science</p>
+                        <a href="profile1.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Profile 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="ain.png" class="card-img-top" alt="Jane Smith">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nur Ain Najwa</h5>
+                        <p class="card-text">Bachelor of Accountancy</p>
+                        <a href="profile2.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Profile 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="aliyah.png" class="card-img-top" alt="Aliyah">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nurul Aliyah Bashirah</h5>
+                        <p class="card-text">Bachelor of Engineering</p>
+                        <a href="profile3.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Profile 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="put.png" class="card-img-top" alt="put">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Puteri Hazimah Hanis</h5>
+                        <p class="card-text">Bachelor of Design</p>
+                        <a href="profile4.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Profile 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="ellia.png" class="card-img-top" alt="ellia">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nur Ellia Syafiqah</h5>
+                        <p class="card-text">Bachelor of Business</p>
+                        <a href="profile5.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Profile 6 -->
+            <div class="col">
+                <div class="card">
+                    <img src="qas.png" class="card-img-top" alt="qas">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Putri Batrisyia Qasdina</h5>
+                        <p class="card-text">Bachelor of Arts</p>
+                        <a href="profile6.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer -->
+   <footer class="footer text-center">
+    <div class="container">
+        <p class="mb-2">&copy; 2025 UiTM E-Profile. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
